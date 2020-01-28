@@ -1,0 +1,36 @@
+.who {
+
+    background-image: url("https://images.unsplash.com/photo-1529243526159-303ff337d22b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=500");
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+    color: rgb(188, 202, 219)
+}
+
+h3 {
+
+    font-size: 30px;
+    color: rgb(0, 0, 0)
+}
+
+p {
+
+    font-family: Georgia, serif;
+    Font-weight: bold;
+    Font-size: 20px;
+    color: rgb(255, 255, 255);
+
+
+
+}
+
+li {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}

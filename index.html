@@ -1,25 +1,67 @@
-<body>
-  <div id="Resume-root"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sally Student Resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <body class="who">
+    <div id="Resume-root"></div>
 
-  <script type="text/babel">
-    //As you can see jsx makes code much easier to use... All this is put inside the element application-root
-    function App() {
-        return
-        (
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-        )
+    <script type="text/babel">
+      //As you can see jsx makes code much easier to use... All this is put inside the element application-root
+      function App(props) {
+        return <span>{props.children}</span>;
+      }
 
-    }
+      ReactDOM.render(
+        <App>
+          <header>
+            <h1> Sally's Resume</h1>
+          </header>
 
-    ReactDOM.render(
-      <App className="my-class">
-        <h1>Current Page Title!</h1>
-      </App>,
-      document.querySelector("#Resume-root")
-    );
-  </script>
-</body>
+          <p>Contact Information</p>
+          <p>Name: Sally</p>
+          <p>
+            Email Address:
+            <a href="mailto:SallyGetsMoney.com " target="_blank">
+              Please Click{" "}
+            </a>{" "}
+          </p>
+          <p>Phone Number:222-222-2222</p>
+          <img
+            src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+            alt="Image has a background of france"
+          />
+
+          <main>
+            <ol>
+              <li> Young Buck University</li>
+              <li> Major:Thugology</li>
+              <li> GPA: 4.0 </li>
+            </ol>
+
+            <h3>Work History</h3>
+            <p>ACCOUNTING FOR SUCCESS 01/04/18-03/02/19 </p>
+            <ul>
+              <li>File papers when boss says to</li>
+              <li>Mess with numbers when my boss comes by</li>
+            </ul>
+            <p> COFFEE CREAM YOU NA MEAN 02/08/2016-05/08/2017 </p>
+            <ul>
+              <li> Brew customer coffee orders </li>
+              <li> seperate coffee beans based on import locations </li>
+            </ul>
+          </main>
+        </App>,
+        document.querySelector("#Resume-root")
+      );
+    </script>
+  </body>
+</html>
